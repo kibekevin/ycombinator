@@ -70,8 +70,34 @@
 
 @layer utilities {
     .heading{
-    @apply uppercase bg-black px-6 py-3 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+        @apply uppercase bg-black px-6 py-3 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
     }
+
+    .sub_heading{
+        @apply font-medium text-[20px] text-white max-w-2xl text-center break-words;
+
+    }
+
+    .pink_container {
+    @apply w-full bg-primary-DEFAULT min-h-[530px] flex justify-center items-center flex-col py-10 px-6;
+    }
+
+    
+
+    .pattern {
+        background-image: linear-gradient(
+                to right,
+                transparent 49.5%,
+                rgba(251, 232, 67, 0.2) 49.5%,
+                rgba(251, 232, 67, 0.6) 50.5%,
+                transparent 50.5%
+        );
+        background-size: 5% 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+
 }
 
 
