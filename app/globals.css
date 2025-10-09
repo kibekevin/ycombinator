@@ -96,6 +96,48 @@
         @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none text-black;
     }
 
+    .section_container{
+        @apply px-6 py-10 max-w-7xl mx-auto;
+
+    }
+
+    .text-30-semibold {
+        @apply font-semibold text-[30px] text-black dark:text-foreground;
+    }
+
+    .text-16-medium {
+        @apply font-medium text-[16px];
+    }
+
+    .text-26-semibold {
+        @apply font-semibold text-[26px];
+    }
+
+    .card_grid {
+        @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+    }
+
+    .no-result {
+        @apply text-black-100 dark:text-foreground text-sm font-normal;
+    }
+
+    .startup-card {
+        @apply bg-white dark:bg-black-DEFAULT border-[5px] border-black dark:border-white-DEFAULT py-6 px-5 rounded-[22px] shadow-200 hover:border-primary-100 transition-all duration-500 hover:shadow-300 hover:bg-primary-100 dark:text-white-DEFAULT hover:text-black-DEFAULT;
+
+    }
+
+    .startup-card_desc {
+        @apply font-normal text-[16px] line-clamp-2 my-3 text-black-100 dark:text-white-100 group-hover:text-black-100 break-all;
+    }
+
+    .startup-card_img {
+        @apply w-full h-[164px] rounded-[10px] object-cover;
+    }
+
+    .startup-card_btn {
+        @apply rounded-full bg-black-200 dark:bg-white-100 font-medium text-[16px] text-white dark:text-black px-5 py-3 group-hover:bg-black group-hover:text-white;
+    }
+
     .pattern {
         background-image: linear-gradient(
                 to right,
