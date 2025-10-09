@@ -37,7 +37,8 @@ const StartupCard = ({post}:{post:Post}) => {
             <p className='startup-card_desc'>
                 {description}
             </p>
-            <img src={image} alt="placeholder" className='startup-card_img'/>
+            {/* <img src={image} alt="placeholder" className='startup-card_img'/> */}
+            <Image src={image} alt='placeholder' className='startup-card_img'/>
         </Link>
         <div className='flex justify-between gap-3 mt-5'>
             <Link href={`/?query=${category.toLowerCase()}`}>
