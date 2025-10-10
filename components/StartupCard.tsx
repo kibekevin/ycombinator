@@ -1,5 +1,4 @@
 import React from 'react'
-import { Post } from '@/types/post'
 import { formatDate } from '@/lib/utils'
 import { EyeIcon } from 'lucide-react'
 import Link from 'next/link'
