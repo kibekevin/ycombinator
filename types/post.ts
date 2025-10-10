@@ -1,6 +1,7 @@
 export type Author = {
   _id: number,
-  name: string
+  name: string,
+  image: string
 }
 
 export type Post = {
