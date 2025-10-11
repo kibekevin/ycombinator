@@ -12,7 +12,20 @@ images: {
             hostname:'*'  //Allows Images from all sources
         }
     ]
-}
+},
+
+// experimental: {
+//     ppr: "incremental"
+// },
+
+// devIndicators: {
+//     appIsrStatus: true,
+//     buildActivity: true,
+//     buildActivityPosition: "bottom-right"
+// }
+
+//Instead of using ppr which requires Next.js Canary, I will implement React Suspense with Server Components
+
 };
 
 export default nextConfig;

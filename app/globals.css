@@ -101,6 +101,10 @@
 
     }
 
+    .text-30-bold {
+        @apply text-[30px] font-bold text-black dark:text-white-DEFAULT;
+    }
+
     .text-30-semibold {
         @apply font-semibold text-[30px] text-black dark:text-foreground;
     }
@@ -113,12 +117,16 @@
         @apply font-semibold text-[26px];
     }
 
+    .text-20-medium {
+        @apply font-medium text-[20px] text-black dark:text-white-DEFAULT;
+    }
+
     .card_grid {
         @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
     }
 
     .no-result {
-        @apply text-black-100 dark:text-foreground text-sm font-normal;
+        @apply text-black dark:text-white-DEFAULT text-sm font-normal;
     }
 
     .startup-card {
@@ -136,6 +144,38 @@
 
     .startup-card_btn {
         @apply rounded-full bg-black-200 dark:bg-white-100 font-medium text-[16px] text-white dark:text-black px-5 py-3 group-hover:bg-black group-hover:text-white;
+    }
+
+    .tag {
+        @apply bg-secondary px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative dark:text-black-100;
+    }
+
+    .tag-tri {
+        @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+    }
+
+    .section_container {
+        @apply px-6 py-10 max-w-7xl mx-auto;
+    }
+
+    .divider {
+        @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+    }
+
+    .view_skeleton {
+        @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-3 right-3;
+    }
+
+    .view-container {
+        @apply flex justify-end items-center mt-5 fixed bottom-3 right-3;
+    }
+
+    .view-text {
+        @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-lg capitalize text-black;
+    }
+
+    .category-tag {
+        @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-xl text-black h-fit;
     }
 
     .pattern {
